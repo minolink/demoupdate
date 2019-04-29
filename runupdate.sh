@@ -3,7 +3,7 @@
 d2=$(cat /opt/demoupdate/demoupdate/ver.md)
 d1=$(cat /home/pi/demoapp/ver.md)
 
-if [ $d2>$d1 ]; then
+if [ $d2 -gt $d1 ]; then
 	echo "begin update..."
 	unzip -o /opt/demoupdate/demoupdate/ud.zip -d /opt/demoupdate/demoupdate/
 	mv /home/pi/demoapp/demoapp /home/pi/demoapp/demoapp_bk
