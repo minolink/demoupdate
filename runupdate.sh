@@ -11,6 +11,7 @@ if [ $d2 -gt $d1 ]; then
         mv /home/pi/demoapp/ver.md /home/pi/demoapp/ver_bk.md
         cp /opt/demoupdate/demoupdate/ver.md /home/pi/demoapp	
 	echo "update finish"
+	sudo reboot
 fi
 
 
