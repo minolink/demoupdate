@@ -10,6 +10,8 @@ if [ $d2 -gt $d1 ]; then
         cp /opt/demoupdate/demoupdate/demoapp /home/pi/demoapp/
         mv /home/pi/demoapp/ver.md /home/pi/demoapp/ver_bk.md
         cp /opt/demoupdate/demoupdate/ver.md /home/pi/demoapp	
+	mv /opt/monitor/monitor.py /opt/monitor/monitor_bk.pybk
+	cp /opt/demoupdate/demoupdate/monitor.py /opt/monitor/
 	echo "update finish"
 	sudo reboot
 fi
